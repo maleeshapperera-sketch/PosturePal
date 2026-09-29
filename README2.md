@@ -90,6 +90,15 @@ All messages are published to the configured topic as JSON:
 
 ---
 
+## Laptop Dashboard
+
+Open [`dashboard/index.html`](dashboard/index.html) in a browser on your laptop. It subscribes to the same
+HiveMQ Cloud topic over WebSockets (port 8884). It tells you whether the problem is **slouching** or
+**not moving**, shows today's stats and an event log, and can send desktop notifications.
+See [`dashboard/README.md`](dashboard/README.md) for setup.
+
+---
+
 ## Posture Threshold
 
 A Z-axis tilt angle below **70°** is treated as a slouch. Adjust this value in `evaluatePosture()` to suit your sensor mounting position and preference.
